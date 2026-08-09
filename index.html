@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Designer Portfolio — [REPLACE NAME]</title>
+    <meta name="description" content="Shimansi Maurya — Fashion & Textile Designer portfolio." />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><img id="brand-logo" class="brand-logo" src="shimansi_logo.jpeg" alt="logo" /> Shimansi Maurya</div>
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="nav" aria-hidden="false">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <nav>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+          <a href="Shimansi_Maurya_Resume.pdf" target="_blank">Download CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-meta">
+          <h1 class="eyebrow">Fashion & Textile Designer</h1>
+          <h2 class="hero-title">Shimansi Maurya</h2>
+          <p class="hero-sub">“I build editorial-forward fashion and textile stories through considered materials, handmaking, and refined silhouettes.”</p>
+          <div class="hero-ctas">
+            <a href="#work" class="btn primary">Explore My Work</a>
+            <a href="#contact" class="btn ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-carousel" aria-roledescription="carousel">
+          <button id="carousel-prev" class="carousel-btn" aria-label="Previous image">‹</button>
+          <div class="carousel-viewport">
+            <img id="carousel-image" src="dress_design2.jpeg" alt="Featured work" loading="eager">
+          </div>
+          <button id="carousel-next" class="carousel-btn" aria-label="Next image">›</button>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h3>01 / About</h3>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>“My practice combines craftsmanship, textile experimentation, and editorial direction to create polished fashion narratives that feel contemporary, minimal, and premium.”</p>
+            <ul class="meta-list">
+              <li><strong>Specialties:</strong> Textile surface design, garment development, handcrafted details</li>
+              <li><strong>Approach:</strong> Research-led, material-first, concept-driven storytelling</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="cleaner.jpeg" alt="About image" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <h3>02 / Experience</h3>
+        <div id="experience-list" class="timeline">
+          <!-- Experience items will be inserted by script.js -->
+        </div>
+      </section>
+
+      <section id="work" class="selected-work">
+        <h3>Selected Work</h3>
+        <div id="projects" class="projects-grid">
+          <!-- Image cards injected by script.js -->
+        </div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+
+      <section id="process" class="process">
+        <h3>Creative Process</h3>
+        <div id="process-list" class="process-grid">
+          <!-- Process content inserted by script.js -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Please use the contact details from the supplied PDF. Replace placeholders in <code>index.html</code> or send me the exact text to paste.</p>
+        <ul class="contact-list">
+          <li>Email: <a id="contact-email" href="mailto:">loading…</a></li>
+          <li>Phone: <a id="contact-phone" href="tel:">loading…</a></li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn primary" href="#contact">Get in Touch</a>
+          <a class="btn ghost" href="Shimansi_Maurya_Resume.pdf" target="_blank">Download CV</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightbox-close" class="lightbox-close">×</button>
+      <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt=""/>
+        <div id="lightbox-caption" class="caption"></div>
+        <div class="lightbox-controls">
+          <button id="lightbox-prev">‹</button>
+          <button id="lightbox-next">›</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
