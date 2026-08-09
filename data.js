@@ -57,7 +57,6 @@ const allImages = [
   "dress2.jpeg",
   "dress_design1.jpeg",
   "dress_design2.jpeg",
-  "dress_design3.jpeg",
   "dress_design4.jpeg",
   "handmaking_image1.jpeg",
   "handmaking_image2.jpeg",
@@ -76,7 +75,6 @@ const allImages = [
 
 const heroImages = [
   "dress_design2.jpeg",
-  "dress_design3.jpeg",
   "dress_design4.jpeg",
   "college_1.jpeg",
   "shimansi_new.jpeg"
